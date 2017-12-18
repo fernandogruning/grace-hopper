@@ -1,0 +1,63 @@
+.card {
+    display: flex;
+    // padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+
+    @media screen and (max-width: 30rem) {
+        flex-direction: column;
+    }
+
+    & > * {
+        padding: 2rem;
+    }
+
+    .imgSection {
+        flex: 24 1 24%;
+
+        @media screen and (min-width: 30.0625rem) {
+            padding-right: 0;
+        }
+
+        @media screen and (max-width: 30rem) {
+            padding-bottom: 0;
+        }
+
+        img {
+            margin-bottom: 0;
+            border-radius: 50%;
+        }
+    }
+
+    .contentSection {
+        flex: 76 1 76%;
+
+        h1 {
+            line-height: 1;
+
+            small {
+                display: block;
+                font-size: 40%;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .generalInfoSection {
+        display: inline-flex;
+        width: 100%;
+        margin-bottom: 1.25rem;
+
+        @media screen and (max-width: 30rem) {
+            flex-direction: column;
+        }
+
+        & > *:not(:first-child) {
+            margin-left: 2rem;
+
+            @media screen and (max-width: 30rem) {
+                margin-left: 0;
+            }
+        }
+    }
+}

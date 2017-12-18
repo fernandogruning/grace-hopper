@@ -1,0 +1,41 @@
+$container-width: 71.25rem;
+$container-padding: 1.0875rem 1.45rem;
+
+.header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0rem;
+    border-bottom: 1px solid #eee;
+}
+.stripe {
+    display: block;
+    width: 100%;
+    height: 0.5rem;
+    background-color: tomato;
+}
+
+.container {
+    display: flex;
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0.5rem 1.5rem;
+
+    @media screen and (max-width: 30rem){
+        justify-content: center;
+    }
+}
+
+.header h3 {
+    margin: 0;
+    text-transform: uppercase;
+
+    small {
+        display: block;
+        text-transform: initial;
+    }
+}
+
+.contentContainer {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0px $container-padding;
+}
