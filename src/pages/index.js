@@ -43,6 +43,12 @@ const IndexPage = () => (
         </p>
       </div>
     </section>
+    <section className={styles.quoteSection}>
+      <blockquote>
+        <h3>Para mí la programación es más que un importante arte práctico. También es un desafío gigantesco en los fundamentos del conocimiento</h3>
+        <footer>&mdash; Grace Hopper</footer>
+      </blockquote>
+    </section>
   </div>
 )
 

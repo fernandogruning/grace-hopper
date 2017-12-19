@@ -10,17 +10,22 @@ const typography = new Typography({
             styles: [
                 '400',
                 '400i',
-                '500',
+                '500i',
                 '800'
             ]
         }
     ],
     headerFontFamily: ['Rubik', 'sans-serif'],
-    headerColor: 'tomato',
+    headerColor: 'hsl(0, 13%, 9%)',
     bodyFontFamily: ['Rubik', 'sans-serif'],
-    bodyColor: 'hsl(0, 13%, 9%)',
+    bodyColor: 'hsla(0, 13%, 9%, 0.8)',
     headerWeight: '800',
-    bodyWeight: '400'
+    bodyWeight: '400',
+    overrideStyles: (options, styles) => ({
+        blockquote: {
+            margin: 0
+        }
+    })
 })
 
 export default typography

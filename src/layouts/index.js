@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 import './typography.scss'
 import './index.scss'
-import styles from './header.module.scss'
+import styles from './styles.module.scss'
 
 const Header = () => (
   <nav className={styles.header}>
@@ -19,6 +19,15 @@ const Header = () => (
       </h3>
     </div>
   </nav>
+)
+
+const Footer = () => (
+  <footer className={styles.footer}>
+    <div className={styles.contentContainer}>
+      <p>Hecho con <span>❤️</span> por <a href="https://fernandogruning.com">Fernando Gruning</a></p>
+      <p>&copy; 2017</p>
+    </div>
+  </footer>
 )
 
 const TemplateWrapper = ({ children }) => (
@@ -35,6 +44,7 @@ const TemplateWrapper = ({ children }) => (
     <div className={styles.contentContainer}>
       {children()}
     </div>
+    <Footer/>
   </div>
 )
 
