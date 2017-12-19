@@ -17,6 +17,17 @@ const Header = () => (
           <small>Una mujer de futuro</small>
         </Link>
       </h3>
+      <ul>
+        <li>
+          <Link to="#logros">Logros</Link>
+        </li>
+        <li>
+          <Link to="#inventos">Inventos</Link>
+        </li>
+        <li>
+          <Link to="#distinciones">Distinciones</Link>
+        </li>
+      </ul>
     </div>
   </nav>
 )

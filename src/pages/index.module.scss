@@ -9,7 +9,7 @@
 .heroCard {
     @extend .card;
 
-    @media screen and (max-width: 30rem) {
+    @media screen and (max-width: 48rem) {
         flex-direction: column;
     }
 
@@ -29,8 +29,14 @@
         }
 
         img {
+            display: block;
             margin-bottom: 0;
             border-radius: 50%;
+
+            @media screen and (max-width: 48rem) {
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
     }
 
@@ -114,7 +120,7 @@
 .imageCard {
     @extend .card;
     flex-direction: column;
-    width: 30rem;
+    max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
 

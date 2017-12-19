@@ -9,6 +9,47 @@ $container-padding: 1.0875rem 1.45rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0rem;
     border-bottom: 1px solid #eee;
+
+    h3 {
+        margin: 0;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 48rem) {
+            font-size: 2.07474rem;
+            margin-bottom: 1rem;
+        }
+        small {
+            display: block;
+            text-align: center;
+            text-transform: initial;
+        }
+
+    }
+
+    ul {
+        display: inline-flex;
+        width: 36%;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: auto;
+        margin-bottom: 0;
+        padding: 0;
+        list-style: none;
+
+        @media screen and (max-width: 48rem) {
+            width: 100%;
+            justify-content: space-around;
+            margin-left: initial;
+        }
+
+        li {
+            margin-bottom: 0;
+
+            // &:not(:last-child) {
+            //     margin-right: 2rem;
+            // }
+        }
+    }
 }
 .stripe {
     display: block;
@@ -23,18 +64,9 @@ $container-padding: 1.0875rem 1.45rem;
     margin: 0 auto;
     padding: 0.5rem 1.5rem;
 
-    @media screen and (max-width: 30rem){
-        justify-content: center;
-    }
-}
-
-.header h3 {
-    margin: 0;
-    text-transform: uppercase;
-
-    small {
-        display: block;
-        text-transform: initial;
+    @media screen and (max-width: 48rem){
+        flex-direction: column;
+        align-items: center;
     }
 }
 
