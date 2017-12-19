@@ -33,11 +33,14 @@ const Footer = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Grace Hopper "
+      title="Grace Hopper"
       meta={[
         { name: 'description', content: 'Grace Hopper' },
         { name: 'keywords', content: 'grace hopper' },
         { name: 'charset', content: 'utf-8' },
+      ]}
+      link={[
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' }
       ]}
     />
     <Header />
