@@ -21,11 +21,6 @@ const typography = new Typography({
     bodyColor: 'hsla(0, 13%, 9%, 0.8)',
     headerWeight: '800',
     bodyWeight: '400',
-    overrideStyles: (options, styles) => ({
-        blockquote: {
-            margin: 0
-        }
-    })
 })
 
 export default typography

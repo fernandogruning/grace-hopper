@@ -1,9 +1,13 @@
 .card {
     display: flex;
+    min-width: 0;
     // padding: 1rem;
     margin-bottom: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 .125rem .25rem rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+.heroCard {
+    @extend .card;
 
     @media screen and (max-width: 30rem) {
         flex-direction: column;
@@ -92,7 +96,7 @@
 .quoteSection {
     blockquote {
         border-radius: 0.5rem;
-        background-color: #eee;
+        background-color: #f7f6f5;
         padding: 1.5rem;
         text-align: right;
 
@@ -102,6 +106,30 @@
         }
 
         h3 {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.imageCard {
+    @extend .card;
+    flex-direction: column;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    .cardImg {
+        width: 100%;
+        margin-bottom: 0;
+        border-top-left-radius: calc(.5rem - 1px);
+        border-top-right-radius: calc(.5rem - 1px);
+    }
+
+    .cardBody {
+        flex: 1 1 auto;
+        padding: 1.25rem;
+
+        p:last-child {
             margin-bottom: 0;
         }
     }

@@ -55,12 +55,11 @@ $container-padding: 1.0875rem 1.45rem;
 }
 
 footer.footer {
-    // position: absolute;
-    // bottom: 0;
-    padding: 1rem 0 2rem 0;
-    background-color: lavender;
     display: block;
     width: 100%;
+    padding: 1rem 0 2rem 0;
+    border-top: 1px solid #eddada;
+
 
     .contentContainer {
         padding-bottom: 0;
@@ -76,9 +75,9 @@ footer.footer {
         font-style: normal;
         line-height: 1.4rem;
         animation: heart-grow;
-        animation-duration: 1.8s;
+        animation-duration: 1.4s;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
     }
 }
 
