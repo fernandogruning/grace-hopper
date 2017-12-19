@@ -16,6 +16,7 @@ const typography = new Typography({
         }
     ],
     headerFontFamily: ['Rubik', 'sans-serif'],
+    headerColor: 'tomato',
     bodyFontFamily: ['Rubik', 'sans-serif'],
     bodyColor: 'hsl(0, 13%, 9%)',
     headerWeight: '800',

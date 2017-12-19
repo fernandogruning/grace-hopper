@@ -1,6 +1,7 @@
 .card {
     display: flex;
     // padding: 1rem;
+    margin-bottom: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
 
@@ -58,6 +59,32 @@
             @media screen and (max-width: 30rem) {
                 margin-left: 0;
             }
+        }
+    }
+}
+
+.achievementsSection {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item {
+        width: 100%;
+
+        @media screen and (min-width: 48rem) {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            padding: 0 0.5rem;
+
+            // i {
+            //     display: block;
+            //     text-align: center;
+            // }
+        }
+
+        i {
+            font-style: normal;
         }
     }
 }
