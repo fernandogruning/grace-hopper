@@ -21,6 +21,15 @@ const typography = new Typography({
     bodyColor: 'hsla(0, 13%, 9%, 0.8)',
     headerWeight: '800',
     bodyWeight: '400',
+    overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
+        h4: {
+            ...adjustFontSizeTo('1.2rem'),
+            marginBottom: rhythm(384615385/1000000000)
+        },
+        strong: {
+            color: options.headerColor,
+        }
+    })
 })
 
 export default typography
