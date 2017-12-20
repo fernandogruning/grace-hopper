@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import './typography.scss'
 import './index.scss'
@@ -19,13 +20,13 @@ const Header = () => (
       </h3>
       <ul>
         <li>
-          <Link to="#logros">Logros</Link>
+          <AnchorLink href="#logros">Logros</AnchorLink>
         </li>
         <li>
-          <Link to="#inventos">Inventos</Link>
+          <AnchorLink href="#inventos">Inventos</AnchorLink>
         </li>
         <li>
-          <Link to="#distinciones">Distinciones</Link>
+          <AnchorLink href="#distinciones">Distinciones</AnchorLink>
         </li>
       </ul>
     </div>

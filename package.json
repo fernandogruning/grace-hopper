@@ -8,7 +8,8 @@
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "latest",
-    "gatsby-plugin-typography": "latest"
+    "gatsby-plugin-typography": "latest",
+    "react-anchor-link-smooth-scroll": "^1.0.5"
   },
   "keywords": [
     "gatsby"

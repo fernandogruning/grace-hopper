@@ -121,6 +121,69 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
+    <section className={styles.distintionsSection}>
+      <h2 id="distinciones">Distinciones</h2>
+      <div className={styles.col}>
+        <div className={styles.card}>
+          <div className={styles.content}>
+            <h4>Programadora Senior</h4>
+          </div>
+          <div className={styles.footer}>
+            <h4>1950</h4>
+          </div>
+        </div>
+      </div>
+      <div className={styles.col}>
+        <div className={styles.card}>
+          <div className={styles.content}>
+            <h4>Hombre del año en ciencias de la computación por la Data Processing Management Association</h4>
+          </div>
+          <div className={styles.footer}>
+            <h4>1969</h4>
+          </div>
+        </div>
+      </div>
+      <div className={styles.col}>
+        <div className={styles.card}>
+          <div className={styles.content}>
+            <h4>Primera mujer nombrada miembro distinguido de la British Computer Society</h4>
+          </div>
+          <div className={styles.footer}>
+            <h4>1973</h4>
+          </div>
+        </div>
+      </div>
+      <div className={styles.col}>
+        <div className={styles.card}>
+          <div className={styles.content}>
+            <h4>Medalla de Servicios Distinguidos de la Defensa de Estados Unidos</h4>
+          </div>
+          <div className={styles.footer}>
+            <h4>1986</h4>
+          </div>
+        </div>
+      </div>
+      <div className={styles.col}>
+        <div className={styles.card}>
+          <div className={styles.content}>
+            <h4>Premio Golden Gavel</h4>
+          </div>
+          <div className={styles.footer}>
+            <h4>1988</h4>
+          </div>
+        </div>
+      </div>
+      <div className={styles.col}>
+        <div className={styles.card}>
+          <div className={styles.content}>
+             <h4>Medalla Nacional de Tecnología</h4>
+          </div>
+          <div className={styles.footer}>
+            <h4>1991</h4>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 )
 
