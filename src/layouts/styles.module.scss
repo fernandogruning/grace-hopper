@@ -96,7 +96,13 @@ footer.footer {
 
 
     .contentContainer {
+        display: flex;
+        width: 100%;
         padding-bottom: 0;
+
+        .left, .right {
+            flex: 1;
+        }
     }
 
     p {

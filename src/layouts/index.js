@@ -8,6 +8,8 @@ import './typography.scss'
 import './index.scss'
 import styles from './styles.module.scss'
 
+import githubIcon from './github.svg'
+
 const Header = () => (
   <nav className={styles.header}>
     <div className={styles.stripe}></div>
@@ -36,8 +38,14 @@ const Header = () => (
 const Footer = () => (
   <footer className={styles.footer}>
     <div className={styles.contentContainer}>
-      <p>Hecho con <span>❤️</span> por <a href="https://fernandogruning.com">Fernando Gruning</a></p>
-      <p>&copy; 2017</p>
+      <div className={styles.left}>
+        <p>Hecho con <span>❤️</span> por <a href="https://fernandogruning.com">Fernando Gruning</a></p>
+        <p>&copy; 2017</p>
+      </div>
+      <div className={styles.center}>
+        <a href="https://github.com/fernandogruning/grace-hopper">{`${githubIcon}`}</a>
+      </div>
+      <div className={styles.right}></div>
     </div>
   </footer>
 )
