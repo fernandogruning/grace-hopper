@@ -3,11 +3,14 @@ import Link from 'gatsby-link'
 
 import styles from './index.module.scss'
 
+import graceHopperImg from '../img/grace-hopper.jpg'
+import bugImg from '../img/bug.jpg'
+
 const IndexPage = () => (
   <div>
     <section className={styles.heroCard}>
       <div className={styles.imgSection}>
-        <img src="https://biztechmagazine.com/sites/default/files/tiny-uploads/2012/grace-hopper-300.jpg" alt="Grace Hopper"/>
+        <img src={graceHopperImg} alt="Grace Hopper"/>
       </div>
       <div className={styles.contentSection}>
         <div className={styles.heading}>
@@ -53,7 +56,7 @@ const IndexPage = () => (
     </section>
     <section className={styles.imageSection}>
       <div className={styles.imageCard}>
-        <img className={styles.cardImg} src="http://static2.businessinsider.com/image/5593f5cc6bb3f7ac51d8d3cf-1200-800/bug-6.jpg" alt="Primer caso actual de un 'bug' encontrado"/>
+        <img className={styles.cardImg} src={bugImg} alt="Primer caso actual de un 'bug' encontrado"/>
         <div className={styles.cardBody}>
           <p>Primer caso actual de un 'bug' encontrado</p>
         </div>
