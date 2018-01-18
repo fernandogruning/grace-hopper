@@ -38,14 +38,8 @@ const Header = () => (
 const Footer = () => (
   <footer className={styles.footer}>
     <div className={styles.contentContainer}>
-      <div className={styles.left}>
         <p>Hecho con <span>❤️</span> por <a href="https://fernandogruning.com">Fernando Gruning</a></p>
-        <p>&copy; 2017</p>
-      </div>
-      <div className={styles.center}>
-        <a href="https://github.com/fernandogruning/grace-hopper">{`${githubIcon}`}</a>
-      </div>
-      <div className={styles.right}></div>
+        <p>&copy; 2017. <a href="https://github.com/fernandogruning/grace-hopper" target="_blank">Ver en Github</a></p>
     </div>
   </footer>
 )
