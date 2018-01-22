@@ -52,6 +52,7 @@ const TemplateWrapper = ({ children }) => (
         { name: 'description', content: 'Grace Hopper' },
         { name: 'keywords', content: 'grace hopper' },
         { name: 'charset', content: 'utf-8' },
+        { name: 'theme-color', content: '#ff6347' },
       ]}
       link={[
         { rel: 'icon', type: 'image/png', href: '/favicon.png' }
