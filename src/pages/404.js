@@ -1,9 +1,10 @@
 import React from 'react'
+import Link from 'gatsby-link';
 
 const NotFoundPage = () => (
   <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1>¡Oh! ¿Es esto un 🐞?</h1>
+    <h3><Link to="/">Regresa a la página de inicio</Link></h3>
   </div>
 )
 
